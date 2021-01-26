@@ -1,0 +1,5 @@
+google_api_key: "AIzaSyDL4aHCcRaAMc0UoWPHg2ScfPY7EjFchZk"
+google_search_engine_id: "26e7cf0be0e06a438"
+bing_api_key: "b429b36cc2444126a2b73847d7907d15"
+default_number_of_pages: "10"
+redis_url: "redis://:p65263ea1a2060240c91cbf3460e9baf9315bee6317120fd81745b2602de3e7b6@ec2-52-72-187-161.compute-1.amazonaws.com:28529"
