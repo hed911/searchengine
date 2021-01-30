@@ -1,4 +1,4 @@
-module ParamsValidator
+module Validators
   class Search
     include ActiveModel::Validations
     attr_accessor :engine, :text, :offset, :count
@@ -8,9 +8,9 @@ module ParamsValidator
 
     validates_each :engine do |record, field, value|
       unless value.nil?
-        SUPPORTED_ENGINES = ['google', 'bing']
+        supported_engines = ['google', 'bing']
         values = value.strip.split(',')
-        values.select{ |v| !SUPPORTED_ENGINES.include?(v) }
+        values.select{ |v| !supported_engines.include?(v) }
           .each{ |v| record.errors.add(field, "Engine (#{v}) not supported") }
       end
     end

@@ -11,6 +11,7 @@ gem 'redis'
 gem 'bootsnap', '>= 1.4.4', require: false
 # gem 'rack-cors'
 group :development, :test do
+  gem "factory_bot_rails"
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'rspec-rails', '~> 4.0.2'
 end
@@ -20,6 +21,8 @@ group :development do
 end
 group :test do
   gem 'capybara'
+  
 end
+gem 'faker'
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]

@@ -1,5 +1,5 @@
-module Utils
-  class HttpRequester
+module Services
+  class Requester
     attr_reader :request_data, :response, :errors
   
     def initialize(request_data)

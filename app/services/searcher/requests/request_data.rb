@@ -1,4 +1,4 @@
-module Utils
+module Services
   module Requests
     class RequestData
       attr_reader :headers, :body, :url, :type

@@ -1,4 +1,4 @@
-module Utils
+module Services
   module Requests
     class Google < Request
       def initialize(text)

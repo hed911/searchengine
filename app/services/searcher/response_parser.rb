@@ -1,4 +1,4 @@
-module Utils
+module Services
   class ResponseParser
     def self.parse(data, provider)
       data.map{ |i| i.merge({ provider:provider }) }

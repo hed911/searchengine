@@ -1,4 +1,4 @@
-module Utils
+module Services
   class SearchEngine
     attr_accessor :request, :response_handler, :result, :valid
 
@@ -9,9 +9,9 @@ module Utils
   
     def fetch_results(options)
       @request.set_config(options)
-      http_requester = HttpRequester.new @request.get_request_data
-      http_requester.execute
-      data = @response_handler.parse(http_requester.response)
+      requester = Requester.new @request.get_request_data
+      requester.execute
+      data = @response_handler.parse(requester.response)
       @valid = true
       begin
         @result = ResponseParser.parse(data, @request.id)

@@ -1,4 +1,4 @@
-module Utils
+module Services
   module Requests
     class Bing < Request
       def initialize(text)

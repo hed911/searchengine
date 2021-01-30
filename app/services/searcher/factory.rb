@@ -1,4 +1,4 @@
-module Utils
+module Services
   class Factory
     def self.for(type, text)
       case type

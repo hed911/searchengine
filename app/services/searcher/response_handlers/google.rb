@@ -1,4 +1,4 @@
-module Utils
+module Services
   module ResponseHandlers
     class Google
       def parse(data)
